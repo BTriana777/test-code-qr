@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-center-column  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin box-shadow { 
+    box-shadow: 2px 4px 8px rgba($color: #000000, $alpha: 0.4);
 }
